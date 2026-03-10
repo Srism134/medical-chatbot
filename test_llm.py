@@ -2,8 +2,10 @@ import ollama
 import json
 import os
 
+# store all patient data
 patient_data = ""
 
+# read all patient JSON files
 for file in os.listdir():
     if file.startswith("patient_") and file.endswith(".json"):
         try:
@@ -16,24 +18,33 @@ for file in os.listdir():
 print("Medical Chatbot Ready!")
 print("Ask a question about the patients.\n")
 
+# chatbot loop
 while True:
     question = input("You: ")
 
     prompt = f"""
-You are a medical assistant.
+You are a medical assistant chatbot.
 
-Use the following patient records to answer the question.
+IMPORTANT RULES:
+- Answer ONLY using the patient records below.
+- Do NOT use external medical knowledge.
+- If the answer is not found in the records, reply: "Information not available in patient records."
 
 Patient Records:
 {patient_data}
 
-Question:
+User Question:
 {question}
 """
 
     response = ollama.chat(
         model="llama3",
-        messages=[{"role": "user", "content": prompt}]
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
     )
 
-    print("Bot:", response["message"]["content"])
+    print("\nBot:", response["message"]["content"])
