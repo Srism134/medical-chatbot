@@ -1,0 +1,17 @@
+Patient Name: John Smith
+Age: 45
+Condition: Hypertension
+Medication: Lisinopril
+Last Visit: 2025-12-10
+
+Patient Name: Maria Garcia
+Age: 52
+Condition: Type 2 Diabetes
+Medication: Metformin
+Last Visit: 2025-11-20
+
+Patient Name: David Lee
+Age: 60
+Condition: High Cholesterol
+Medication: Atorvastatin
+Last Visit: 2025-10-05
