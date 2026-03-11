@@ -1,5 +1,4 @@
+fastapi
+uvicorn
 ollama
-streamlit
-sentence-transformers
-faiss-cpu
-numpy
+pydantic
