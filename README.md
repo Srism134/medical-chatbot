@@ -186,6 +186,16 @@ streamlit run app.py
 
 ---
 
+<<<<<<< Updated upstream
+=======
+The chatbot only answers using the provided patient records and does not generate external medical advice. 
+
+\## Demo Video
+
+
+
+Watch the chatbot demo in the repository video file: medical\_chatbot\_demo.mp4
+>>>>>>> Stashed changes
 
 
 \## Example Questions
@@ -222,7 +232,4 @@ The chatbot answers \*\*only using the patient records provided in the dataset\*
 
 Smriti  
 
-MSc Data Science  
-
-Northumbria University
 
